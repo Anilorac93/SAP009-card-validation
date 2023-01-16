@@ -15,4 +15,8 @@ section{
     margin: 0 auto;
 }
 
+input:focus {
+    background-color: grey;
+  }
+
   
