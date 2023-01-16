@@ -16,6 +16,7 @@ section{
 }
 
 input:focus {
+    border: groove;
     background-color: purple;
   }
 
