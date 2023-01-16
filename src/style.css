@@ -1,6 +1,9 @@
 body{
-    background-color: #603675;
+    background-color: #cf0a11;
     margin:40px 0px 0px 40px;
+    text-align:center;
+    font-family: open sans, sans-serif;
+    color: #ffffff;
 }
 
 img{
