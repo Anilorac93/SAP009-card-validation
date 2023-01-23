@@ -23,4 +23,13 @@ input:focus {
     border: groove;
   }
 
-  
+  button{
+    background-color: #41f341;
+    border: 1px solid;
+    padding: 2px 20px;
+    border-radius: 3px;
+  }
+
+  button focus{
+    background-color: blue;
+  }

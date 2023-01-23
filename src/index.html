@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lange="pt-br">
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
@@ -7,24 +7,30 @@
   </head>
   
   <body>
-    <header>Valide o número do seu cartão</header>
+    <header><u>Valide o número do seu cartão</u></header>
     <main>
       <h1>Abaixo inclua o número do seu cartão de crédito para que
         possamos verificá lo.</h1>
 
-        <form>
+        <form id="form">
           <label for="numero">Número do cartão:</label>
-          <input id="numero" type="text">
+          <input class="campo" type="text"
+          placeholder="0000 0000 0000 0000"
+          maxlength="16" pattern="[0-9]+"
+          autocomplete="off"
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+          <button id="button">Verificar</button>
         </form> 
 
         <section id="cardex">
 
-        <img src="img/credit-card.png" alt="cartão de crédito">
+        <img src="img/credit-card.png" alt="cartão de crédito"/>
 
         </section>
 
     </main>
     <footer></footer>
-    <script src="index.js" type="module"></script>
+   <script src="index.js" type="module"></script>
   </body>
 </html>
