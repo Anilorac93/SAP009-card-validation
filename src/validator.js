@@ -24,7 +24,7 @@ const validator = {isValid(creditCardNumber){
 maskify: function  (creditCardNumber) {
   const quatroDigitos = creditCardNumber.slice(-4);
   const caracteres = creditCardNumber.length -4;
-  const mascara = "#".repeat(caracteres) + quatroDigitos;
+  const mascara = "🐱".repeat(caracteres) + quatroDigitos;
   return mascara
 }
 }
