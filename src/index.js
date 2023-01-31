@@ -1,72 +1,31 @@
 import validator from './validator.js';
 
-const form = document.querySelector('#form')
+const button = document.getElementById("button");
+const input = document.getElementById("campo");
+const resposta = document.getElementById("resposta");
 
-const campo = document.querySelector('.campo')
+button.addEventListener("click", verificar);
 
-form.addEventListener('submit',function(event){
-    event.preventDefault()
+function verificar(e) {
+  e.preventDefault();
+  const valorDigitado = input.value;
+  const validation = validator.isValid(valorDigitado);
 
-    const input = campo.value
+  
+  if (
+    valorDigitado.trim() === "" ||    
+    valorDigitado === "0000000000000000" ||
+    valorDigitado === "000000000000000" ||
+    valorDigitado === "00000000000000" ||
+    valorDigitado.length <= 13
+  ) {
+    return (resposta.innerHTML = "NÃO É UM CARTÃO. POR FAVOR, DIGITE UM NÚMERO DE CARTÃO!");
+  }  
+  else if (validation === true) {
+    return (resposta.innerHTML = `CARTÃO ${validator.maskify(valorDigitado)} VÁLIDO`);
+  }
+  else if (!validation) {  
+    return (resposta.innerHTML = `CARTÃO ${validator.maskify(valorDigitado)} INVÁLIDO`);
+  } 
 
-    console.log(input)
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const number = document.querySelector("#number");
-
-// const button = document.querySelector("#botao");
-
-// const message = document.querySelector("#verificar");
-
-// buton.addEventListner ("click", cardvalidation);
-
-// function cardvalidation(event){
-// event.preventDefault()
-
-// const numeroDigitado = number.value
-
-// const validado = validator.isValid(numeroDigitado)
-
-// if (numeroDigitado === "") {
-// console.log ("Por gentileza, digite um número válido de cartão.")
-// }
-
-// else if(
-//  numeroDigitado === "0000000000000000" ||
-//   numeroDigitado === "000000000000000" ||
-//   numeroDigitado === "00000000000000" ||
-//   numeroDigitado.length <= 13){
-//  console.log ("Por favor digite um número válido")
-//  }
-
-// else if(validado === true){
-//     return(message.innerHTML = "Validado")
-// }
-
-// else if(validado === false)
-// return(message.innerHTML = "Não validado")
-// }
-
-
-// number.addEventListner("keyup", clone);
-// function clone (){
-//     const value = document.getElementById("numero").value
-
-//     const ocult= validator.maskify(value)
-    
-//     const clone= document.getElementById("clone").value = ocult
-// }
-
-
+}

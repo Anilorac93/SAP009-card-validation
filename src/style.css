@@ -1,9 +1,9 @@
 body{
-    background-color: #7d72c4;
+    background-image: linear-gradient(to right, #2e0100 , #a10703);
     margin:40px 0px 0px 40px;
     text-align:center;
-    font-family: open sans, sans-serif;
-    color: #ffffff;
+    font-family: open sans;
+    color: #ba7806;
 }
 
 img{
@@ -11,8 +11,8 @@ img{
 }
 
 section{
-    width: 40%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 30px 450px;
 }
 
 input:focus {
@@ -24,7 +24,7 @@ input:focus {
   }
 
   button{
-    background-color: #41f341;
+    background-color: #806008;
     border: 1px solid;
     padding: 2px 20px;
     border-radius: 3px;

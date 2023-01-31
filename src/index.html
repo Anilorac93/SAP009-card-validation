@@ -7,25 +7,31 @@
   </head>
   
   <body>
-    <header><u>Valide o número do seu cartão</u></header>
+    <header>
+      <h3>Que ótimo! Seu cadastro já está quase concluido, agora só falta 
+        verificarmos o número do seu cartão.</h3></header>
+    <br><br>
+    
     <main>
-      <h1>Abaixo inclua o número do seu cartão de crédito para que
+      <h1>Por favor, digite abaixo o número do seu cartão de crédito para que
         possamos verificá lo.</h1>
+        <br>
 
         <form id="form">
           <label for="numero">Número do cartão:</label>
-          <input class="campo" type="text"
+          <input id="campo" type="text" 
           placeholder="0000 0000 0000 0000"
           maxlength="16" pattern="[0-9]+"
           autocomplete="off"
           onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-
-          <button id="button">Verificar</button>
+          <p id="resposta"></p>
         </form> 
+
+        <button id="button">Verificar</button>
 
         <section id="cardex">
 
-        <img src="img/credit-card.png" alt="cartão de crédito"/>
+        <img src="img/cartao.png" alt="cartão de crédito"/>
 
         </section>
 
