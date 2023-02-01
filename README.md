@@ -9,8 +9,7 @@
 * [5. Marco Opcional: Mostrar a franquia do cartão](#5-marco-opcional-mostrar-a-franquia-do-cartão)
 * [6. Considerações técnicas](#6-considerações-técnicas)
 * [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
+* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
 * [9. Para considerar o feedback do projeto](#9-para-considerar-o-feedback-do-projeto)
 
 ***
